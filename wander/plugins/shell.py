@@ -28,4 +28,6 @@ class ShellPlugin(Plugin):
             if args["output_error"]:
                 return f"Error executing command:\n{content}\n{error_output}"
             else:
-                raise subprocess.CalledProcessError(error_output)
+                raise RuntimeError(
+                    f"Error executing command:\n{content}\n{error_output}"
+                )

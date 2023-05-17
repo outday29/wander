@@ -1,9 +1,12 @@
-.PHONY: format lint
+.PHONY: format lint test
 
 format:
-	black ./wander
-	ruff --select I --fix ./wander
+	black .
+	ruff --select I --fix .
 
 lint:
-	black ./wander --check
-	ruff ./wander
+	black . --check
+	ruff .
+
+test:
+	pytest ./tests
