@@ -6,7 +6,7 @@ from ..models import Plugin
 
 PARSER = argparse.ArgumentParser()
 PARSER.add_argument(
-    "-e", "--output-error", action="store_true", help="Enable verbose mode"
+    "-e", "--output-error", action="store_true", help="Allow error output"
 )
 
 
