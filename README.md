@@ -10,7 +10,7 @@ You can install `wander` with `pip`
 pip install wander
 ```
 
-You need to have Python version of 3.10 or above to use this library.
+You need to have Python version 3.10 or above to use this library.
 
 ## Usage
 
