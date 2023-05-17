@@ -1,5 +1,0 @@
-"""
-```!shell
-echo "Hello world"
-```
-"""

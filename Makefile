@@ -1,9 +1,9 @@
 .PHONY: format lint
 
 format:
-	black .
-	ruff --select I --fix .
+	black ./wander
+	ruff --select I --fix ./wander
 
 lint:
-	black . --check
-	ruff .
+	black ./wander --check
+	ruff ./wander

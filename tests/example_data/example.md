@@ -10,7 +10,7 @@ This is for `run_command.py`
 cat run_command.py
 ```
 
-This  should not be replaced
+This should not be replaced
 
 ```
 hello world
@@ -19,5 +19,6 @@ hello world
 ```!shell -e
 hello there
 ```
+
 ```!shell -e
 ```
