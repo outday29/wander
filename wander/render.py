@@ -21,9 +21,6 @@ class Renderer(BaseModel):
         index = -1
 
         def replace_block(match):
-            import pdb
-
-            pdb.set_trace()
             nonlocal index
             index += 1
             return output_list[index]
