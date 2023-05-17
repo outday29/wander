@@ -50,4 +50,4 @@ To write your own plugin, simply inherit the `Plugin` class and do the following
 - Specify `parser` property, which is an `argparse.ArgumentParser` object to define what CLI-like arguments are accepted after the directive name
 - Implement `run` async method. It must takes an `args` argument holding all the values of the command arguments defined in your parser as well as `content` argument holding all texts in the block.
 
-You can find an example in [shell.py](??).
+You can find an example in [shell.py](.wander/plugins/shell.py).
