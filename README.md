@@ -21,7 +21,7 @@ text = """\
 Today is:
 ```!shell
 date
-```
+```\
 """
 ````
 
@@ -31,7 +31,7 @@ Using `wander` to render it.
 from wander import Renderer
 from wander.plugins import ShellPlugin
 
-renderer = Renderer(plugins=[ShellPlugin])
+renderer = Renderer(plugins=[ShellPlugin()])
 renderer.render(text)
 ```
 
