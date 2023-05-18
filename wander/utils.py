@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 def read_file(filepath: str) -> str:
     with open(filepath, "r") as f:
         text = f.read()

@@ -21,7 +21,7 @@ class Plugin(BaseModel, ABC):
         return value
 
     @abstractmethod
-    async def run(self, args: Dict[str, Any], content: str):
+    async def run(self, args: Dict[str, Any], content: str) -> str:
         # We will always assume async run
         raise NotImplementedError
 
