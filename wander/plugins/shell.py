@@ -17,12 +17,13 @@ class ShellPlugin(Plugin):
 
     async def run(self, args: Dict[str, Any], content: str) -> str:
         try:
-            output = (
-                subprocess.check_output(content, shell=True, stderr=subprocess.STDOUT)
+            return (
+                subprocess.check_output(
+                    content, shell=True, stderr=subprocess.STDOUT
+                )
                 .decode()
                 .strip()
             )
-            return output
         except subprocess.CalledProcessError as e:
             error_output = e.output.decode().strip()
             if args["output_error"]:
