@@ -8,3 +8,4 @@ __pycache__
 .vscode
 dist
 TODO.md
+main.py
